@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoHiemNienLiem\Forms\fChuKyBaoHiemNienLiemMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoHiemNienLiem\Forms\fChuKyBaoHiemNienLiemMoi.Designer.cs">
+      <DependentUpon>fChuKyBaoHiemNienLiemMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoHiemNienLiem\Forms\fLichSuNop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoHiemNienLiem\Forms\fLichSuNop.Designer.cs">
+      <DependentUpon>fLichSuNop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +72,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaoHiemNienLiem\Forms\fChuKyBaoHiemNienLiemMoi.resx">
+      <DependentUpon>fChuKyBaoHiemNienLiemMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoHiemNienLiem\Forms\fLichSuNop.resx">
+      <DependentUpon>fLichSuNop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +105,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BaoHiemNienLiem\Business\" />
+    <Folder Include="BaoHiemNienLiem\Data\" />
+    <Folder Include="BaoHiemNienLiem\Model\" />
+    <Folder Include="Classes\Common\" />
+    <Folder Include="Classes\Constants\" />
+    <Folder Include="Classes\DataAccess\" />
+    <Folder Include="Classes\Enum\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
